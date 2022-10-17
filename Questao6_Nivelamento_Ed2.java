@@ -24,16 +24,14 @@ class Questao6_Nivelamento_Ed2{
             try {
                 last = lista.removeLast();
             } catch (Exception NoSuchElementException) {
+                System.out.println("O elemento do meio era: " + first.toString());
                 break;
             }
 
-
             if(lista.isEmpty()){
                 System.out.println("Os elementos do meio eram: " + first.toString() + " e " + last.toString());
+                break;
             }
         }
-
-        System.out.println("O elemento do meio era: " + first.toString());
-
     }
 }
